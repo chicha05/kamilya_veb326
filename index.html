@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/logo/favicon.png" type="image/x-icon">
+    <title>SNIKI</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <img src="assets/logo/logo.svg" alt="">
+                </div>
+
+                <input type="checkbox" name="" id="burger">
+                <label for="burger"></label>
+
+                <div class="menu_nav">
+                    <nav class="header_nav">
+                        <a href="index.html">Главная</a>
+                        <a href="catalog.html">Каталог</a>
+                        <a href="">Мужчинам</a>
+                        <a href="">Женщинам</a>
+                        <a href="">Детям</a>
+                    </nav>
+                </div>
+               
+
+                <div class="basket">
+                    <a href="basket.html"><img src="assets/img/icon/basket.svg" alt=""></a>
+                    <img src="assets/img/icon/heart.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner py-100">
+        <div class="container">
+            <div class="banner-block">
+                <div class="top">
+                    <div class="banner-text">
+                        <h1 class="text1">Nike
+                            Air Max Motion
+                        </h1>
+    
+                        <p class="text2">Оригинальные женские кроссовки Найк Air Max Motion 2 –
+                             идеальная модель для длительных летних
+                             прогулок и пробежек в теплую погоду на свежем воздухе.Их верх выполнен из дышащего материала, который обеспечивает полную воздухопроницаемость для повышенного комфорта при занятиях спортом.
+                        </p>
+    
+                        <a href="catalog.html"><button>Каталог</button></a>
+                    </div>
+    
+                    <div class="banner-img">
+                        <img src="assets/img/banner/nike-banner.png" alt="" class="sneaker">
+                    </div>
+                </div>
+               
+                <hr>
+
+                <div class="bottom">
+                   
+                    <div class="images">
+                        <img src="assets/img/banner/img1.png" alt="" onclick="imgSlider('assets/img/banner/nike-banner.png'); changeText('Nike Air Max Motion'); changeTextP('Оригинальные женские кроссовки Найк Air Max Motion 2 идеальная модель для длительных летних прогулок и пробежек в теплую погоду на свежем воздухе.Их верх выполнен из дышащего материала, который обеспечивает полную воздухопроницаемость для повышенного комфорта при занятиях спортом.')">
+                        <img src="assets/img/banner/img2.png" alt="" onclick="imgSlider('assets/img/banner/nike-banner3.png'); changeText('Nike Air Max AP'); changeTextP('Обладая изящным спортивным дизайном, Nike Air Max AP позволяет объединить прошлое и настоящее с первоклассным комфортом. Низкопрофильный дизайн с мягким мягким воротником, воздушной сеткой и удобной стелькой позволяет носить ее с любой одеждой.')">
+                        <img src="assets/img/banner/img3.png" alt="" onclick="imgSlider('assets/img/banner/nike-banner2.png'); changeText('Nike Air Max 97'); changeTextP('В то время, когда коллаборации могут быть сделаны со вкусом, сильно разрекламированы или все вышеперечисленное, легендарный розничный торговец и бренд Undefeated представили идеальное сочетание ожидания и великолепного дизайна с их версией Nike Air Max 97 OG.')">
+                    </div>
+                    <!-- <img src="assets/img/icon/right.svg" alt=""> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+           document.querySelector(".sneaker").src = anything;
+       }
+       function changeText(anything){
+        document.querySelector(".text1").textContent = anything;
+       }
+       function changeTextP(anything){
+           document.querySelector(".text2").textContent = anything;
+       }
+   </script>
+
+    <div class="hit py-100">
+        <div class="container">
+            <h2 class="zagol">Хит продаж</h2>
+            <div class="hit-block">
+                <div class="hit-cards">
+                    <div class="card">
+                        <img src="assets/img/hit/img1.png" alt="">
+                        <h3>Nike Air Max 97 “On Air — Shanghai Kaleidoscope”</h3>
+                        <div class="size">
+                            <p class="active">38</p>
+                            <p>39</p>
+                            <p>40</p>
+                            <p>41</p>
+                            <p>42</p>
+                        </div>
+                        
+                        <p class="price">167 000 ₽</p>
+
+                        <button class="btn">В корзину</button>
+
+                        <div class="favorites">
+                            <img src="assets/img/icon/purple_heart.svg" alt="" class="heart">
+                        </div>
+                       
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/img/hit/img2.png" alt="">
+                        <h3>Nike Air Max 97 OG “Off-White — White”</h3>
+                        <div class="size">
+                            <p class="active">38</p>
+                            <p>39</p>
+                            <p>40</p>
+                            <p>41</p>
+                            <p>42</p>
+                        </div>
+                        
+                        <p class="price">70 000 ₽</p>
+
+                        <button class="btn">В корзину</button>
+
+                        <div class="favorites">
+                            <img src="assets/img/icon/purple_heart.svg" alt="" class="heart">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/img/hit/img3.png" alt="">
+                        <h3>Nike Air Max 97 “On Air — Shanghai Kaleidoscope”</h3>
+                        <div class="size">
+                            <p class="active">38</p>
+                            <p>39</p>
+                            <p>40</p>
+                            <p>41</p>
+                            <p>42</p>
+                        </div>
+                        
+                        <p class="price">40 000 ₽</p>
+
+                        <button class="btn">В корзину</button>
+
+                        <div class="favorites">
+                            <img src="assets/img/icon/purple_heart.svg" alt="" class="heart">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="assets/img/catalog/img4.svg" alt="">
+                        <h3>Nike Air Max Plus Men's Shoes</h3>
+                        <div class="size">
+                            <p class="active">38</p>
+                            <p>39</p>
+                            <p>40</p>
+                            <p>41</p>
+                            <p>42</p>
+                        </div>
+                        
+                        <p class="price">167 000 ₽</p>
+
+                        <button class="btn">В корзину</button>
+
+                        <div class="favorites">
+                            <img src="assets/img/icon/purple_heart.svg" alt="" class="heart">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn">Смотреть еще</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="category py-100">
+        <div class="container">
+            <h2 class="zagol">Категории</h2>
+            <div class="category-block">
+
+                <div class="left">
+                    <a href="catalog.html">
+                        <div class="c-card big">
+                            <img src="assets/img/category/img1.png" alt="">
+                            <p>Nike</p>
+                        </div>
+                    </a>
+                    <div class="c-card small">
+                        <img src="assets/img/category/img3.png" alt="">
+                        <p>Vans</p>
+                    </div>
+                    <div class="c-card big">
+                        <img src="assets/img/category/img5.png" alt="">
+                        <p>Rick Owens</p>
+                    </div>
+                </div>
+                
+                <div class="right">
+                    <div class="c-card big">
+                        <img src="assets/img/category/img2.png" alt="">
+                        <p>Adidas</p>
+                    </div>
+                    <div class="c-card small">
+                        <img src="assets/img/category/img4.png" alt="">
+                        <p>Converse</p>
+                    </div>
+                    <div class="c-card big">
+                        <img src="assets/img/category/img6.png" alt="">
+                        <p>Crocs</p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-100">
+        <div class="container">
+            <div class="footer">
+                <div class="logo">
+                    <img src="assets/logo/logo.svg" alt="">
+                </div>
+
+                <input type="checkbox" name="" id="burger">
+                <label for="burger"></label>
+
+                <div class="menu_nav">
+                    <nav class="footer_nav">
+                        <a href="index.html">Главная</a>
+                        <a href="catalog.html">Каталог</a>
+                        <a href="">Мужчинам</a>
+                        <a href="">Женщинам</a>
+                        <a href="">Детям</a>
+                    </nav>
+                </div>
+
+                <div class="contacts">
+                    <p class="nav_zagol">Контакты</p>
+                    <p>ул. Бари Галеева 3А</p>
+                    <a href="tel:+79534806942">+79534806942</a>
+                    <a href="mailto:sniki@gmail.com">sniki@gmail.com</a>
+                </div>
+
+                <div class="soc-seti">
+                    <img src="assets/img/icon/tg.svg" alt="">
+                    <img src="assets/img/icon/wsapp.svg" alt="">
+                    <img src="assets/img/icon/youtube.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

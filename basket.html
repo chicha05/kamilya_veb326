@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/logo/favicon.png" type="image/x-icon">
+    <title>SNIKI</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <img src="assets/logo/logo.svg" alt="">
+                </div>
+
+                <input type="checkbox" name="" id="burger">
+                <label for="burger"></label>
+
+                <div class="menu_nav">
+                    <nav class="header_nav">
+                        <a href="index.html">Главная</a>
+                        <a href="catalog.html">Каталог</a>
+                        <a href="">Мужчинам</a>
+                        <a href="">Женщинам</a>
+                        <a href="">Детям</a>
+                    </nav>
+                </div>
+
+                <div class="basket">
+                    <a href="basket.html"><img src="assets/img/icon/basket.svg" alt=""></a>
+                    <img src="assets/img/icon/heart.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+<div class="container">
+    <div class="frame">
+        <div class="basket-kolvo">
+            <h2>Корзина</h2>
+            <div class="tovar-kolvo">
+                <div class="tovar">
+                    <h4>Товар</h4>
+                    <div class="tovar-name">
+                        <div class="img">
+                            <img src="assets/img/hit/img2.png" alt="">
+                        </div>
+                    
+                        <div class="tovar-text">
+                            <p class="name">Nike Air Max 97 OG “Off-White — White”</p>
+                            <p class="size">40</p>
+                            <p class="price">70 000 ₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="kolvo">
+                    <h4>Кол-во</h4>
+                    <div class="number">
+                        <div class="input-group quantity_goods">
+                            <input type="button" value="-" id="button_minus">
+                            <input type="text" step="1" min="1" max="10" id="num_count" name="quantity" value="1" title="Qty">
+                            <input type="button" value="+" id="button_plus">
+                        </div>
+                        <script type="text/javascript">
+                            var numCount = document.getElementById('num_count');
+                            var plusBtn = document.getElementById('button_plus');
+                            var minusBtn = document.getElementById('button_minus');
+                            plusBtn.onclick = function() {
+                            var qty = parseInt(numCount.value);
+                            qty = qty + 1;
+                            numCount.value = qty;
+                            }
+                            minusBtn.onclick = function() {
+                            var qty = parseInt(numCount.value);
+                            qty = qty - 1;
+                            numCount.value = qty;
+                            }   
+                        </script>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <hr>
+        <div class="total">
+            <div class="total-text">
+                <p>Всего</p>
+                <p class="price">70 000 ₽</p>
+            </div>
+            <button class="btn">Оформить заказ</button>
+        </div>
+    </div>
+</div>
+   
+    
+</body>
+</html>
