@@ -354,9 +354,6 @@ nav a:hover{
 .card img{
     height: 90px;
 }
-.card .title{
-    height: 40px;
-}
 .favorites img{
     height: 50px;
 }
@@ -716,7 +713,7 @@ input[type="button"]{
     
      .card, .catalog-cards .card{
         width: 160px;
-        height: 250px;
+        height: 260px;
         font-size: 14px;
         padding: 30px 15px;
         gap: 15px;
@@ -726,10 +723,10 @@ input[type="button"]{
         gap: 20px;
     }
    .card h3, .catalog-cards .card h3{
-        font-size: 11.3px;
-
+        font-size: 10px;
+        height: 25px;
     }
-    .title{
+    .card .title{
         height: 25px;
     }
      .card .size p{
@@ -744,7 +741,7 @@ input[type="button"]{
         border: 2px solid #735184;
     }
     .card img{
-        width: 100px;
+        height: 50px;
     }
      .favorites img{
         width: 40px;
